@@ -52,7 +52,7 @@ function addUser() {
     if(email.match(validRegex)){
         if(name && email != null){
             var id = 1;
-            var val = users.map(function(x){return x.id; }).index0f(id);
+            var val = users.map(function(x){return x.id; }).indexOf(id);
             while(val != -1){
                 id++;
                 val = users.map(function(x){return x.id; }).index0f(id);
